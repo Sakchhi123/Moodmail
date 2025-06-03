@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMail - Smart Email Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MoodMail</h1>
+    <textarea id="content" placeholder="Type your email content here..."></textarea>
+    <select id="tone">
+      <option value="formal">Formal</option>
+      <option value="friendly">Friendly</option>
+      <option value="casual">Casual</option>
+      <option value="urgent">Urgent</option>
+    </select>
+    <button id="generateBtn">Generate Email</button>
+
+    <div id="resultContainer" class="hidden">
+      <h2>Generated Email</h2>
+      <pre id="result"></pre>
+      <button id="copyBtn">Copy to Clipboard</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
